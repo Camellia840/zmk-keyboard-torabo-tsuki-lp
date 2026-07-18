@@ -25,6 +25,57 @@
         };
     };
 
+    macros {
+        kagikakko: kagikakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_4 &kp RIGHT_BRACKET &kp BACKSLASH &kp ENTER &kp LEFT>;
+            label = "KAGIKAKKO";
+        };
+
+        browse_new_tab: browse_new_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C) &kp LC(T) &kp LC(V) &kp ENTER>;
+            label = "BROWSE_NEW_TAB";
+        };
+
+        ctrl_k: ctrl_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(END) &kp LC(X)>;
+            label = "CTRL_K";
+        };
+
+        marukakko: marukakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp LS(ASTRK) &kp LS(NUMBER_9) &kp LEFT_ARROW &kp INTERNATIONAL_4>;
+            label = "MARUKAKKO";
+        };
+
+        double_quote: double_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp AT_SIGN &kp AT_SIGN &kp LEFT &kp INTERNATIONAL_4>;
+            label = "DOUBLE_QUOTE";
+        };
+
+        at_mark: at_mark {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp LEFT_BRACKET>;
+            label = "AT_MARK";
+        };
+
+        spash: spash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp SLASH>;
+            label = "SPASH";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
