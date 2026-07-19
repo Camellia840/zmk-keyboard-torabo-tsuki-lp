@@ -121,11 +121,11 @@
 
         cursor {
             bindings = <
-&trans  &trans  &trans    &trans  &trans     &trans                  &trans  &trans          &trans          &trans     &trans  &trans
-&trans  &trans  &trans    &trans  &trans     &trans                  &trans  &trans          &kp UP_ARROW    &trans     &trans  &trans
-&trans  &trans  &kp HOME  &trans  &kp RIGHT  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &ctrl_k         &kp RIGHT  &trans  &trans
-&trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans          &kp DOWN_ARROW  &trans     &trans  &trans
-&trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans          &trans          &trans     &trans  &trans
+&trans  &trans  &trans    &trans  &trans     &trans                  &trans         &trans          &trans          &trans     &trans  &trans
+&trans  &trans  &trans    &trans  &trans     &trans                  &trans         &trans          &kp UP_ARROW    &trans     &trans  &trans
+&trans  &trans  &kp HOME  &trans  &kp RIGHT  &trans  &trans  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &ctrl_k         &kp RIGHT  &trans  &trans
+&trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans         &trans          &kp DOWN_ARROW  &trans     &trans  &trans
+&trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans         &trans          &trans          &trans     &trans  &trans
             >;
         };
     };
