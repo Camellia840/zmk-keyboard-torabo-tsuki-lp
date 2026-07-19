@@ -89,7 +89,7 @@
             key-positions = <25 19>;
         };
 
-        minus {
+        minus_2 {
             bindings = <&none>;
             key-positions = <25 33>;
         };
