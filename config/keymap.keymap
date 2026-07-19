@@ -48,6 +48,11 @@
             bindings = <&kp TAB>;
             key-positions = <13 14>;
         };
+
+        gui_left {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <40 41>;
+        };
     };
 
     macros {
@@ -174,11 +179,11 @@
 
         cursor {
             bindings = <
-&trans  &trans  &trans    &trans  &trans     &trans                  &trans         &trans          &trans          &trans     &trans  &trans
-&trans  &trans  &trans    &trans  &trans     &trans                  &trans         &trans          &kp UP_ARROW    &trans     &trans  &trans
-&trans  &trans  &kp HOME  &trans  &kp RIGHT  &trans  &trans  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &ctrl_k         &kp RIGHT  &trans  &trans
-&trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans         &trans          &kp DOWN_ARROW  &trans     &trans  &trans
-&trans  &trans  &trans    &trans  &trans     &trans  &trans  &trans  &trans         &trans          &trans          &trans     &trans  &trans
+&trans  &trans  &trans    &trans   &trans     &trans                  &trans         &trans          &trans          &trans     &trans  &trans
+&trans  &trans  &trans    &kp END  &trans     &trans                  &trans         &trans          &kp UP_ARROW    &trans     &trans  &trans
+&trans  &trans  &kp HOME  &trans   &kp RIGHT  &trans  &trans  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &ctrl_k         &kp RIGHT  &trans  &trans
+&trans  &trans  &trans    &trans   &trans     &trans  &trans  &trans  &trans         &trans          &kp DOWN_ARROW  &trans     &trans  &trans
+&trans  &trans  &trans    &trans   &trans     &trans  &trans  &trans  &trans         &trans          &trans          &trans     &trans  &trans
             >;
         };
     };
