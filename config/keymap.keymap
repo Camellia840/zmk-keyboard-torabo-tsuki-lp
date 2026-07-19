@@ -50,18 +50,33 @@
         };
 
         gui_left {
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&kp LGUI>;
             key-positions = <40 41>;
         };
 
         gui_right {
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&kp RIGHT_META>;
             key-positions = <49 48>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <36 50>;
+        };
+
+        click_right {
+            bindings = <&kp RS(F10)>;
+            key-positions = <34 35>;
+        };
+
+        alt_right {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <20 21>;
+        };
+
+        alt_left {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <14 15>;
         };
     };
 
