@@ -53,6 +53,16 @@
             bindings = <&kp LEFT_GUI>;
             key-positions = <40 41>;
         };
+
+        gui_right {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <49 48>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <36 50>;
+        };
     };
 
     macros {
