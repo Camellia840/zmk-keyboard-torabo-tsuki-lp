@@ -193,11 +193,11 @@
 
         default {
             bindings = <
-&none  &none             &none     &none     &none                  &none                                                         &none                  &none  &none      &none     &none                  &none
-&none  &kp Q             &kp W     &kp E     &kp R                  &kp T                                                         &kp Y                  &kp U  &kp I      &kp O     &kp P                  &none
-&none  &lt 4 A           &kp S     &kp D     &kp F                  &kp G        &none                      &none                 &kp H                  &kp J  &kp K      &kp L     &lt 1 ENTER            &none
-&none  &mt LEFT_SHIFT Z  &kp X     &kp C     &kp V                  &kp B        &kp INTERNATIONAL_5        &kp INTERNATIONAL_4   &kp N                  &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT MINUS  &none
-&none  &kp LCTRL         &kp LGUI  &kp LALT  &lt 2 INTERNATIONAL_5  &lt 2 SPACE  &mt LEFT_SHIFT LANGUAGE_1  &mt RSHIFT BACKSPACE  &lt 3 INTERNATIONAL_4  &none  &none      &kp RGUI  &kp RCTRL              &none
+&none  &none             &none     &none     &none                  &none                                                        &none                  &none  &none      &none     &none                  &none
+&none  &kp Q             &kp W     &kp E     &kp R                  &kp T                                                        &kp Y                  &kp U  &kp I      &kp O     &kp P                  &none
+&none  &lt 4 A           &kp S     &kp D     &kp F                  &kp G        &none                      &none                &kp H                  &kp J  &kp K      &kp L     &kp ENTER              &none
+&none  &mt LEFT_SHIFT Z  &kp X     &kp C     &kp V                  &kp B        &kp INTERNATIONAL_5        &kp INTERNATIONAL_4  &kp N                  &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT MINUS  &none
+&none  &kp LCTRL         &kp LGUI  &kp LALT  &lt 2 INTERNATIONAL_5  &lt 2 SPACE  &mt LEFT_SHIFT LANGUAGE_1  &lt 3 BACKSPACE      &lt 1 INTERNATIONAL_4  &none  &none      &kp RGUI  &kp RCTRL              &none
             >;
         };
 
