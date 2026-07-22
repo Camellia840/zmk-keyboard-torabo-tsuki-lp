@@ -89,12 +89,12 @@
         };
 
         slash {
-            bindings = <&none>;
+            bindings = <&slash>;
             key-positions = <25 19>;
         };
 
         minus_2 {
-            bindings = <&none>;
+            bindings = <&kp MINUS>;
             key-positions = <25 33>;
         };
 
@@ -106,6 +106,16 @@
         underscore {
             bindings = <&none>;
             key-positions = <25 46>;
+        };
+
+        kakko_maru {
+            bindings = <&marukakko>;
+            key-positions = <46 43>;
+        };
+
+        kakko_kagi {
+            bindings = <&kagikakko>;
+            key-positions = <43 34>;
         };
     };
 
