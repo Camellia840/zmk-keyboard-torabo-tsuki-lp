@@ -113,12 +113,12 @@
 
         kakko_maru {
             bindings = <&marukakko>;
-            key-positions = <46 43>;
+            key-positions = <47 34>;
         };
 
         kakko_kagi {
             bindings = <&kagikakko>;
-            key-positions = <43 34>;
+            key-positions = <34 41>;
         };
     };
 
