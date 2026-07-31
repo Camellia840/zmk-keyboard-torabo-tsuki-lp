@@ -29,7 +29,10 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 
-&mt { tapping-term-ms = <300>; };
+&mt {
+    tapping-term-ms = <300>;
+    flavor = "tap-preferred";
+};
 
 &lt { tapping-term-ms = <250>; };
 
