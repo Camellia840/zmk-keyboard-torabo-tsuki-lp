@@ -2,6 +2,11 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+//キー入力中のトラックボール接触によるオートマウスレイヤ起動の防止．(2026.08.01)
+&zip_temp_layer {
+    require-prior-idle-ms = <1000>;
+};
+
 &pointing_listener {
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
