@@ -88,27 +88,27 @@
 
         pipe {
             bindings = <&kp JP_PIPE>;
-            key-positions = <25 18>;
+            key-positions = <18 29>;
         };
 
         slash {
             bindings = <&slash>;
-            key-positions = <25 19>;
+            key-positions = <19 29>;
         };
 
         minus_2 {
             bindings = <&kp MINUS>;
-            key-positions = <25 33>;
+            key-positions = <33 29>;
         };
 
         backslash {
             bindings = <&none>;
-            key-positions = <25 47>;
+            key-positions = <47 29>;
         };
 
         underscore {
             bindings = <&kp JP_UNDERSCORE>;
-            key-positions = <25 46>;
+            key-positions = <46 29>;
         };
 
         kakko_maru {
