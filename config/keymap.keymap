@@ -200,11 +200,18 @@
             label = "REFERENCE";
         };
 
-        underscore: underscore {
+        underscoreFIXME: underscore {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp INTERNATIONAL_5 &kp LS(NUMBER_6)>;
             label = "UNDERSCORE";
+        };
+
+        backslashFIXME: backslashFIXME {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp LS(NUMBER_6)>;
+            label = "BACKSLASHFIXME";
         };
     };
 
