@@ -199,6 +199,13 @@
             bindings = <&kp INTERNATIONAL_5 &kp LS(NUMBER_6)>;
             label = "REFERENCE";
         };
+
+        underscore: underscore {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp LS(NUMBER_6)>;
+            label = "UNDERSCORE";
+        };
     };
 
     keymap {
