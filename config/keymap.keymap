@@ -281,11 +281,11 @@
 
         symbol {
             bindings = <
-&trans  &trans        &trans           &trans    &trans      &trans                  &trans         &trans    &trans         &trans  &trans  &trans
-&trans  &kp QUESTION  &double_quote    &trans    &reference  &trans                  &kp INT_YEN    &trans    &trans         &trans  &trans  &trans
-&trans  &at_mark      &kp SEMI         &dollar   &trans      &trans  &trans  &trans  &hash          &trans    &kajogaki_dot  &trans  &trans  &trans
-&trans  &trans        &kp EXCLAMATION  &kp APOS  &trans      &trans  &trans  &trans  &kp LS(EQUAL)  &percent  &trans         &trans  &trans  &trans
-&trans  &trans        &trans           &trans    &trans      &trans  &trans  &trans  &trans         &trans    &trans         &trans  &trans  &trans
+&trans  &trans        &trans           &trans    &trans      &trans                  &trans         &trans    &trans         &trans  &trans            &trans
+&trans  &kp QUESTION  &double_quote    &trans    &reference  &trans                  &kp INT_YEN    &trans    &trans         &trans  &kp LS(NUMBER_6)  &trans
+&trans  &at_mark      &kp SEMI         &dollar   &trans      &trans  &trans  &trans  &hash          &trans    &kajogaki_dot  &trans  &trans            &trans
+&trans  &trans        &kp EXCLAMATION  &kp APOS  &trans      &trans  &trans  &trans  &kp LS(EQUAL)  &percent  &trans         &trans  &trans            &trans
+&trans  &trans        &trans           &trans    &trans      &trans  &trans  &trans  &trans         &trans    &trans         &trans  &trans            &trans
             >;
         };
 
