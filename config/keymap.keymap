@@ -102,12 +102,12 @@
         };
 
         backslash {
-            bindings = <&none>;
+            bindings = <&backslash>;
             key-positions = <47 29>;
         };
 
         underscore {
-            bindings = <&kp JP_UNDERSCORE>;
+            bindings = <&underscore>;
             key-positions = <46 29>;
         };
 
@@ -119,6 +119,16 @@
         kakko_kagi {
             bindings = <&kagikakko>;
             key-positions = <34 41>;
+        };
+
+        kakko_dai {
+            bindings = <&daikakko>;
+            key-positions = <34 27>;
+        };
+
+        kakko_nami {
+            bindings = <&namikakko>;
+            key-positions = <34 46>;
         };
     };
 
