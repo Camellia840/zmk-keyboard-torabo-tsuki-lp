@@ -238,6 +238,13 @@
             label = "BACKSLASH";
         };
 
+        power: power {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp JP_CARET>;
+            label = "POWER";
+        };
+
         kajogaki_dot: kajogaki_dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
