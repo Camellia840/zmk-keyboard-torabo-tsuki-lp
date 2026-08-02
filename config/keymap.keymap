@@ -151,6 +151,20 @@
             label = "MARUKAKKO";
         };
 
+        daikakko: daikakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp JP_LBRACKET &kp JP_RBRACKET &kp LEFT_ARROW &kp INTERNATIONAL_4>;
+            label = "DAIKAKKO";
+        };
+
+        namikakko: namikakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp JP_LBRACE &kp JP_RBRACE &kp LEFT_ARROW &kp INTERNATIONAL_4>;
+            label = "NAMIKAKKO";
+        };
+
         double_quote: double_quote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -200,18 +214,18 @@
             label = "REFERENCE";
         };
 
-        underscoreFIXME: underscore {
+        underscore: underscore {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INTERNATIONAL_5 &kp LS(NUMBER_6)>;
+            bindings = <&kp INTERNATIONAL_5 &kp JP_UNDERSCORE>;
             label = "UNDERSCORE";
         };
 
-        backslashFIXME: backslashFIXME {
+        backslash: backslash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp INTERNATIONAL_5 &kp LS(NUMBER_6)>;
-            label = "BACKSLASHFIXME";
+            bindings = <&kp INTERNATIONAL_5 &kp JP_YEN>;
+            label = "BACKSLASH";
         };
     };
 
