@@ -4,7 +4,7 @@
 
 //キー入力中のトラックボール接触によるオートマウスレイヤ起動の防止．(2026.08.01)
 &zip_temp_layer {
-    require-prior-idle-ms = <1000>;
+    require-prior-idle-ms = <300>;
 };
 
 &pointing_listener {
