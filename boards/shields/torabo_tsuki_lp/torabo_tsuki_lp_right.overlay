@@ -1,6 +1,7 @@
 #include "torabo_tsuki_lp.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include <scroll-snap.dtsi>
 
 //キー入力中のトラックボール接触によるオートマウスレイヤ起動の防止．(2026.08.01)
 &zip_temp_layer {
@@ -21,6 +22,7 @@
         input-processors = <
             &zip_temp_layer 1 400        //オートマウスレイヤを優先させるためのおまじない
             &zip_xy_to_scroll_mapper
+            &zip_scroll_snap            //斜めスクロールを防止して縦横スクロールのみにする(2026.08.08)
         >;
     };
 };
