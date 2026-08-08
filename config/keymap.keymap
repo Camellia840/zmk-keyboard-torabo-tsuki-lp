@@ -88,27 +88,27 @@
 
         pipe {
             bindings = <&kp JP_PIPE>;
-            key-positions = <25 18>;
+            key-positions = <18 29>;
         };
 
         slash {
             bindings = <&slash>;
-            key-positions = <25 19>;
+            key-positions = <19 29>;
         };
 
         minus_2 {
             bindings = <&kp MINUS>;
-            key-positions = <25 33>;
+            key-positions = <33 29>;
         };
 
         backslash {
-            bindings = <&none>;
-            key-positions = <25 47>;
+            bindings = <&backslash>;
+            key-positions = <47 29>;
         };
 
         underscore {
-            bindings = <&kp JP_UNDERSCORE>;
-            key-positions = <25 46>;
+            bindings = <&underscore>;
+            key-positions = <46 29>;
         };
 
         kakko_maru {
@@ -119,6 +119,16 @@
         kakko_kagi {
             bindings = <&kagikakko>;
             key-positions = <34 41>;
+        };
+
+        kakko_dai {
+            bindings = <&daikakko>;
+            key-positions = <34 27>;
+        };
+
+        kakko_nami {
+            bindings = <&namikakko>;
+            key-positions = <34 46>;
         };
     };
 
@@ -149,6 +159,20 @@
             #binding-cells = <0>;
             bindings = <&kp INTERNATIONAL_5 &kp LS(ASTRK) &kp LS(NUMBER_9) &kp LEFT_ARROW &kp INTERNATIONAL_4>;
             label = "MARUKAKKO";
+        };
+
+        daikakko: daikakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp JP_LBRACKET &kp JP_RBRACKET &kp LEFT_ARROW &kp INTERNATIONAL_4>;
+            label = "DAIKAKKO";
+        };
+
+        namikakko: namikakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp JP_LBRACE &kp JP_RBRACE &kp LEFT_ARROW &kp INTERNATIONAL_4>;
+            label = "NAMIKAKKO";
         };
 
         double_quote: double_quote {
@@ -199,6 +223,41 @@
             bindings = <&kp INTERNATIONAL_5 &kp LS(NUMBER_6)>;
             label = "REFERENCE";
         };
+
+        underscore: underscore {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp JP_UNDERSCORE>;
+            label = "UNDERSCORE";
+        };
+
+        backslash: backslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp JP_YEN>;
+            label = "BACKSLASH";
+        };
+
+        mypower: mypower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp JP_CARET>;
+            label = "MYPOWER";
+        };
+
+        kajogaki_dot: kajogaki_dot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_4 &kp SLASH &kp ENTER>;
+            label = "KAJOGAKI_DOT";
+        };
+
+        click_and_ctrlv: click_and_ctrlv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK &kp LC(V)>;
+            label = "CLICK_AND_CTRLV";
+        };
     };
 
     keymap {
@@ -206,21 +265,21 @@
 
         default {
             bindings = <
-&none  &none             &none     &none     &none                  &none                                                        &none                  &none  &none      &none     &none                  &none
-&none  &kp Q             &kp W     &kp E     &kp R                  &kp T                                                        &kp Y                  &kp U  &kp I      &kp O     &kp P                  &none
-&none  &lt 4 A           &kp S     &kp D     &kp F                  &kp G        &none                      &none                &kp H                  &kp J  &kp K      &kp L     &kp ENTER              &none
-&none  &mt LEFT_SHIFT Z  &kp X     &kp C     &kp V                  &kp B        &kp INTERNATIONAL_5        &kp INTERNATIONAL_4  &kp N                  &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT MINUS  &none
-&none  &kp LCTRL         &kp LGUI  &kp LALT  &lt 2 INTERNATIONAL_5  &lt 2 SPACE  &mt LEFT_SHIFT LANGUAGE_1  &lt 3 BACKSPACE      &lt 1 INTERNATIONAL_4  &none  &none      &kp RGUI  &kp RCTRL              &none
+&none  &none             &none     &none     &none                  &none                                          &none                  &none  &none      &none     &none                  &none
+&none  &kp Q             &kp W     &kp E     &kp R                  &kp T                                          &kp Y                  &kp U  &kp I      &kp O     &kp P                  &none
+&none  &lt 4 A           &kp S     &kp D     &kp F                  &kp G        &none            &none            &kp H                  &kp J  &kp K      &kp L     &kp ENTER              &none
+&none  &mt LEFT_SHIFT Z  &kp X     &kp C     &kp V                  &kp B        &browse_new_tab  &mo 5            &kp N                  &kp M  &kp COMMA  &kp DOT   &mt RIGHT_SHIFT MINUS  &none
+&none  &kp LCTRL         &kp LGUI  &kp LALT  &lt 2 INTERNATIONAL_5  &lt 2 SPACE  &lt 3 SPACE      &lt 3 BACKSPACE  &lt 1 INTERNATIONAL_4  &none  &none      &kp RGUI  &kp RCTRL              &none
             >;
         };
 
         mouse {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                  &trans    &trans     &trans         &trans     &trans  &trans
-&trans  &trans  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &trans                  &trans    &trans     &kp PAGE_UP    &trans     &trans  &trans
-&trans  &trans  &mkp RCLK       &mkp MCLK       &mkp LCLK        &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp MCLK      &mkp RCLK  &trans  &trans
-&trans  &trans  &trans          &msc SCRL_DOWN  &trans           &trans  &trans  &trans  &trans    &trans     &kp PAGE_DOWN  &trans     &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans    &trans     &trans         &trans     &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans                  &trans    &trans     &trans         &trans     &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans                  &trans    &trans     &kp PAGE_UP    &trans     &trans  &trans
+&trans  &trans     &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp MCLK      &mkp RCLK  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans    &trans     &kp PAGE_DOWN  &trans     &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans    &trans     &trans         &trans     &trans  &trans
             >;
         };
 
@@ -236,21 +295,31 @@
 
         symbol {
             bindings = <
-&trans  &trans        &trans           &trans    &trans      &trans                  &trans       &trans    &trans  &trans  &trans  &trans
-&trans  &kp QUESTION  &double_quote    &trans    &reference  &trans                  &kp INT_YEN  &trans    &trans  &trans  &trans  &trans
-&trans  &at_mark      &kp SEMI         &dollar   &trans      &trans  &trans  &trans  &hash        &trans    &trans  &trans  &trans  &trans
-&trans  &trans        &kp EXCLAMATION  &kp APOS  &trans      &trans  &trans  &trans  &trans       &percent  &trans  &trans  &trans  &trans
-&trans  &trans        &trans           &trans    &trans      &trans  &trans  &trans  &trans       &trans    &trans  &trans  &trans  &trans
+&trans  &trans        &trans           &trans    &trans      &trans                  &trans         &trans    &trans         &trans  &trans    &trans
+&trans  &kp QUESTION  &double_quote    &trans    &reference  &trans                  &kp INT_YEN    &trans    &trans         &trans  &mypower  &trans
+&trans  &at_mark      &kp SEMI         &dollar   &trans      &trans  &trans  &trans  &hash          &trans    &kajogaki_dot  &trans  &trans    &trans
+&trans  &trans        &kp EXCLAMATION  &kp APOS  &trans      &trans  &trans  &trans  &kp LS(EQUAL)  &percent  &trans         &trans  &trans    &trans
+&trans  &trans        &trans           &trans    &trans      &trans  &trans  &trans  &trans         &trans    &trans         &trans  &trans    &trans
             >;
         };
 
         cursor {
             bindings = <
-&trans  &trans  &trans    &trans   &trans     &trans                  &trans         &trans          &trans          &trans     &trans  &trans
-&trans  &trans  &trans    &kp END  &trans     &trans                  &trans         &trans          &kp UP_ARROW    &trans     &trans  &trans
-&trans  &trans  &kp HOME  &kp DEL  &kp RIGHT  &trans  &trans  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &ctrl_k         &kp RIGHT  &trans  &trans
-&trans  &trans  &trans    &trans   &trans     &trans  &trans  &trans  &trans         &trans          &kp DOWN_ARROW  &trans     &trans  &trans
-&trans  &trans  &trans    &trans   &trans     &trans  &trans  &trans  &trans         &trans          &trans          &trans     &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans                     &trans         &trans          &trans          &trans     &trans  &trans
+&trans  &trans  &trans     &kp END    &trans     &trans                     &trans         &trans          &kp UP_ARROW    &trans     &trans  &trans
+&trans  &trans  &kp HOME   &kp DEL    &kp RIGHT  &trans     &trans  &trans  &kp BACKSPACE  &kp LEFT_ARROW  &ctrl_k         &kp RIGHT  &trans  &trans
+&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &trans  &trans  &trans         &trans          &kp DOWN_ARROW  &trans     &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans         &trans          &trans          &trans     &trans  &trans
+            >;
+        };
+
+        others {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &bt BT_CLR    &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
