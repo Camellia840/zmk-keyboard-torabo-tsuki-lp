@@ -251,6 +251,13 @@
             bindings = <&kp INTERNATIONAL_4 &kp SLASH &kp ENTER>;
             label = "KAJOGAKI_DOT";
         };
+
+        click_and_ctrlv: click_and_ctrlv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK &kp LC(V)>;
+            label = "CLICK_AND_CTRLV";
+        };
     };
 
     keymap {
@@ -268,11 +275,11 @@
 
         mouse {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans                  &trans    &trans     &trans         &trans     &trans  &trans
-&trans  &trans     &trans     &trans     &trans     &trans                  &trans    &trans     &kp PAGE_UP    &trans     &trans  &trans
-&trans  &trans     &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp MCLK      &mkp RCLK  &trans  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans    &trans     &kp PAGE_DOWN  &trans     &trans  &trans
-&trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans    &trans     &trans         &trans     &trans  &trans
+&trans  &trans     &trans     &trans     &trans            &trans                  &trans    &trans     &trans         &trans     &trans  &trans
+&trans  &trans     &trans     &trans     &trans            &trans                  &trans    &trans     &kp PAGE_UP    &trans     &trans  &trans
+&trans  &trans     &mkp RCLK  &mkp MCLK  &mkp LCLK         &trans  &trans  &trans  &mkp MB4  &mkp LCLK  &mkp MCLK      &mkp RCLK  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &click_and_ctrlv  &trans  &trans  &trans  &trans    &trans     &kp PAGE_DOWN  &trans     &trans  &trans
+&trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans    &trans     &trans         &trans     &trans  &trans
             >;
         };
 
