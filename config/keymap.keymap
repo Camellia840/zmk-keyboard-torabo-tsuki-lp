@@ -71,11 +71,6 @@
             key-positions = <36 50>;
         };
 
-        click_right {
-            bindings = <&kp RS(F10)>;
-            key-positions = <34 35>;
-        };
-
         alt_right {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <20 21>;
@@ -88,27 +83,27 @@
 
         pipe {
             bindings = <&kp JP_PIPE>;
-            key-positions = <18 29>;
+            key-positions = <18 40>;
         };
 
         slash {
             bindings = <&slash>;
-            key-positions = <19 29>;
+            key-positions = <19 40>;
         };
 
         minus_2 {
             bindings = <&kp MINUS>;
-            key-positions = <33 29>;
+            key-positions = <33 40>;
         };
 
         backslash {
             bindings = <&backslash>;
-            key-positions = <47 29>;
+            key-positions = <47 40>;
         };
 
         underscore {
             bindings = <&underscore>;
-            key-positions = <46 29>;
+            key-positions = <46 40>;
         };
 
         kakko_maru {
